@@ -18,12 +18,12 @@ while(True):
 	f=open("log.txt",'a')
 	
 	ser.write("010C1\r\n")
-	RPM=(ser.read(4))
+	RPM=(ser.read(ser.inWaiting()))
 	f.write(str(RPM))
 	f.write(",")
 
 	ser.write("010D1\r\n")
-	SPEED=(ser.read(3))
+	SPEED=(ser.read(ser.inWaiting()))
 	f.write(str(SPEED))
 	f.write(",")
 	
