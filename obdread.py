@@ -2,6 +2,7 @@
 #   Author : Sajin George
 #   Company : RIT
 #   Dis: read OBDII information and commit store in log file, 
+#
 import serial
 import time
 #print("opening Serial\n")
